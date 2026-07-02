@@ -11,10 +11,12 @@ export default defineConfig({
       reporter: ["text", "lcov", "json-summary"],
       reportsDirectory: "coverage",
       include: ["src/**/*.ts"],
-      exclude: [
-        "src/__tests__/**",
-        "src/server.ts",
-        "**/*.config.ts",
+  exclude: [
+        '**/__tests__/**',      
+        '**/*.test.ts',         
+        '**/*.e2e.test.ts',     
+        'prisma/**',            
+        'src/app.ts'            
       ],
     },
     reporters: ["default", "junit"],
