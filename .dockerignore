@@ -1,0 +1,7 @@
+node_modules
+dist
+coverage
+reports
+.env
+sonar-project.properties
+sbom-spdx.json
